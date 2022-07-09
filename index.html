@@ -1,0 +1,388 @@
+<!-- *****************JOSH TECHNOLOGY GROUP ASSIGNMENT****************  -->
+<!-- NAME : ABHISHEK KUMAR
+COLLEGE NAME : ABES ENGINEERING COLLEGE -->
+
+<!-- FEATURES AND FUNCTIONLITIES
+1. Open Modal on clicking booking Appointment 
+2. Use of latest technologies of CSS (Flexbox and Grids) 
+3. No use br etc. type of tag. 
+4. Working Video having functionality of play and pause. 
+5. Working Carousel implemented by only javascript not even use any third party js framework. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Digital Consulting</title>
+</head>
+
+<body onload="show()">
+    <!-- **********OVERLAY***************** -->
+    <div class="overlay hidden"></div>
+
+    <!-- ************HEADER************** -->
+    <section class="header">
+        <div class="navbar">
+            <h3 class="navbar__heading">Digital Consulting</h3>
+            <nav class="main-class">
+                <ul class="main-nav-list">
+                    <li>
+                        <a href="#" class="main-nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="main-nav-link">Product</a>
+                    </li>
+                    <li>
+                        <a href="#" class="main-nav-link">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="main-nav-link">Contact</a>
+                    </li>
+                    <object data="/img/vector-3.svg" type="image/svg+xml"></object>
+                    <object data="/img/cart.svg" type="image/svg+xml"></object>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__text">
+            <h1 class="header__primary-heading">
+                Drive More Customers Through Digital
+            </h1>
+
+            <h4 class="header__heading-description">
+                We know how large objects will act, but things on a small scale.
+            </h4>
+
+            <a href="#" class="btn btn-main show-modal">Book Appointment</a>
+            <a href="#" class="btn btn-text">Learn More</a>
+        </div>
+
+        <!-- ***************MODAL************** -->
+        <div class="modal hidden">
+            <h5 class="modal__small">Contact Us</h5>
+            <h2 class="modal__heading">Make an Appointment</h2>
+            <input type="text" id="name" placeholder="Full Name" />
+            <input type="email" id="email" placeholder="example@gmail.com" />
+            <!-- <input type="datetime-local" onfocus="(this.type='date')" placeholder=="Select Date and Time" id="doa" /> -->
+            <input id="doa" class="input" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Select  Date and Time" />
+            <input type="text" id="message" placeholder="Message" />
+            <button class="modal-book">Book Appointment</button>
+            <button class="close-modal">Cancel</button>
+        </div>
+    </section>
+
+
+
+    <!-- *************SECTION FEATURES-6**************** -->
+    <section class="features-6">
+        <div class="features__box">
+            <h3 class="features-6__heading">why choose us</h3>
+            <div class="features-6__para">
+                <span class="span__line-6">Problems trying to resolve the conflict between</span
+          >
+          <span class="span__line-6"
+            >the two major realms of Classical physics: Newtonian
+            mechanics</span
+          >
+        </div>
+      </div>
+      <div class="container grid grid--3--cols">
+        <div class="card">
+          <div class="card__upper">
+            <div class="card__img--container">
+              <object data="/img/users.svg" class="card__img" type="image/svg+xml"></object>
+            </div>
+              <h5 class="card__heading">Web Development</h5>
+          </div>
+          <div class="card__lower">
+              <h6 class="card__lower--data"><span>-  The best products start</span> <span>with Figma</span></h6>
+                <h6 class="card__lower--data">- Design with real data</h6>
+                <h6 class="card__lower--data">- Lightning fast prototyping</h6>
+                <h6 class="card__lower--data">- Fastest way to organize</h6>
+                <h6 class="card__lower--data">- Work at the speed of thought.</h6>
+                <a href="#" class="card__link">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__upper">
+                <div class="card__img--container">
+                    <object data="/img/award.svg" class="card__img" type="image/svg+xml"></object>
+                </div>
+                <h5 class="card__heading">National top 50 firms</h5>
+            </div>
+            <div class="card__lower">
+                <h6 class="card__lower--data"><span>-  The best products start</span> <span>with Figma</span></h6>
+                <h6 class="card__lower--data">- Design with real data</h6>
+                <h6 class="card__lower--data">- Lightning fast prototyping</h6>
+                <h6 class="card__lower--data">- Fastest way to organize</h6>
+                <h6 class="card__lower--data">- Work at the speed of thought.</h6>
+                <a href="#" class="card__link">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__upper">
+                <div class="card__img--container">
+                    <object data="/img/carbon.svg" class="card__img" type="image/svg+xml"></object>
+                </div>
+                <h5 class="card__heading">Digital Marketing</h5>
+            </div>
+            <div class="card__lower">
+                <h6 class="card__lower--data"><span>-  The best products start</span> <span>with Figma</span></h6>
+                <h6 class="card__lower--data">- Design with real data</h6>
+                <h6 class="card__lower--data">- Lightning fast prototyping</h6>
+                <h6 class="card__lower--data">- Fastest way to organize</h6>
+                <h6 class="card__lower--data">- Work at the speed of thought.</h6>
+                <a href="#" class="card__link">Learn More</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- ****************SECTION FEATURES-11*************** -->
+    <section class="features-11">
+        <div class="features-11_part1">
+            <div class="video__container">
+                <div class="video1">
+                    <video src="img/video.mp4" class="my-video" onclick="playPause()" loop muted></video>
+                    <div class="pause__btn" onClick="playPause()"></div>
+                </div>
+            </div>
+            <div class="features__box">
+                <h3 class="features-11__heading">
+                    We are providing best business service.
+                </h3>
+                <div class="features-6__para">
+                    <span class="span__line-11">Problems trying to resolve the conflict between</span
+            >
+            <span class="span__line-6"
+              >the two major realms of Classical physics: Newtonian
+              mechanics</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="features-11_part2"></div>
+    </section>
+
+
+
+    <!-- **************************SECTION TESTINOMIALS********************** -->
+    <section class="testinomials">
+      <div class="testinomials__box">
+        <h3 class="features-11__heading">What Clients Say</h3>
+        <div class="features-6__para">
+          <span class="span__line-6"
+            >Problems trying to resolve the conflict between</span
+          >
+          <span class="span__line-6"
+            >the two major realms of Classical physics: Newtonian
+            mechanics</span
+          >
+        </div>
+        <div class="parent">
+          <div id="leftArrow" onclick="moveLeft()">
+              <img src="img/eva_arrow-back-fill.svg" alt="eva_arrow-back-fill" />
+          </div>
+          <div class="child" id="c1">
+              <div class="stars">
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bx-star.svg" alt="stars" />
+              </div>
+              <p>
+                  Slate helps you see how many <br /> more days you need to work to <br /> reach your financial goal.
+              </p>
+              <div class="clients-details">
+                  <img src="img/6bf6465e317c8783cb378dac2d3e0a40.png" alt="client-img" />
+                  <div class="client-data">
+                      <a href="#">Regina Miles</a>
+                      <p>Designer</p>
+                  </div>
+              </div>
+          </div>
+          <div class="child" id="c2">
+              <div class="stars">
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bx-star.svg" alt="stars" />
+              </div>
+              <p>
+                  Slate helps you see how many <br /> more days you need to work to <br /> reach your financial goal.
+              </p>
+              <div class="clients-details">
+                  <img src="img/6bf6465e317c8783cb378dac2d3e0a40.png" alt="client-img" />
+                  <div class="client-data">
+                      <a href="#">Regina Miles</a>
+                      <p>Designer</p>
+                  </div>
+              </div>
+          </div>
+          <div class="child" id="c3">
+              <div class="stars">
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bx-star.svg" alt="stars" />
+              </div>
+              <p>
+                  Slate helps you see how many <br /> more days you need to work to <br /> reach your financial goal.
+              </p>
+              <div class="clients-details">
+                  <img src="img/6574142deed99b053bd093bb59e5da62.png" alt="client-img" />
+                  <div class="client-data">
+                      <a href="#">Regina Miles</a>
+                      <p>Designer</p>
+                  </div>
+              </div>
+          </div>
+          <div class="child" id="c4">
+              <div class="stars">
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bx-star.svg" alt="stars" />
+              </div>
+              <p>
+                  Slate helps you see how many <br /> more days you need to work to <br /> reach your financial goal.
+              </p>
+              <div class="clients-details">
+                  <img src="img/6574142deed99b053bd093bb59e5da62.png" alt="client-img" />
+                  <div class="client-data">
+                      <a href="#">Regina Miles</a>
+                      <p>Designer</p>
+                  </div>
+              </div>
+          </div>
+          <div class="child" id="c5">
+              <div class="stars">
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bx-star.svg" alt="stars" />
+              </div>
+              <p>
+                  Slate helps you see how many <br /> more days you need to work to <br /> reach your financial goal.
+              </p>
+              <div class="clients-details">
+                  <img src="img/6bf6465e317c8783cb378dac2d3e0a40.png" alt="client-img" />
+                  <div class="client-data">
+                      <a href="#">Regina Miles</a>
+                      <p>Designer</p>
+                  </div>
+              </div>
+          </div>
+          <div class="child" id="c6">
+              <div class="stars">
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bxs-star.svg" alt="stars" />
+                  <img src="img/icn bx-star.svg" alt="stars" />
+              </div>
+              <p>
+                  Slate helps you see how many <br /> more days you need to work to <br /> reach your financial goal.
+              </p>
+              <div class="clients-details">
+                  <img src="img/6bf6465e317c8783cb378dac2d3e0a40.png" alt="client-img" />
+                  <div class="client-data">
+                      <a href="#">Regina Miles</a>
+                      <p>Designer</p>
+                  </div>
+              </div>
+          </div>
+          <div id="rightArrow" onclick="moveRight()">
+              <img src="img/eva_arrow-back-fill.svg" alt="eva_arrow-back-fill" />
+          </div>
+      </div>
+      </div>
+    </section>
+
+
+
+    <!-- *********************SECTION FOOTER******************** -->
+    <footer class="footer">
+      <div class="footer__upper">
+        <div class="footer__nav">
+          <h3 class="navbar__heading-2">Digital Consulting</h3>
+          <nav class="footer__main-class">
+              <ul class="footer__nav-class">
+                    <a href="#"><object data="/img/facebook.svg" type="image/svg+xml"></object></a>
+                    <a href="#"><object data="/img/insta.svg" type="image/svg+xml"></object></a>
+                    <a href="#"><object data="/img/twitter.svg" type="image/svg+xml"></object></a>
+                    <a href="#"><object data="/img/youtube.svg" type="image/svg+xml"></object></a>
+              </ul>
+          </nav>
+      </div>
+      <div class="border__bottom"></div>
+      <div class="footer__nav--bottom">
+        <div class="box1">
+          <div class="footer__item">
+            <h5 class="footer__link-heading">
+              Company Info
+            </h5>
+            <div class="box__link">
+              <a href="#" class="footer__link-1">About Us</a>
+              <a href="#" class="footer__link-2">Carrier</a>
+              <a href="#" class="footer__link-3">We are hiring</a>
+            </div>
+          </div>
+        <div class="footer__item">
+          <h5 class="footer__link-heading">
+            Legal
+          </h5>
+          <div class="box__link">
+            <a href="#" class="footer__link-1">About Us</a>
+            <a href="#" class="footer__link-2">Carrier</a>
+            <a href="#" class="footer__link-3">We are hiring</a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <h5 class="footer__link-heading">
+            Features
+          </h5>
+          <div class="box__link">
+            <a href="#" class="footer__link-1">Business Marketing</a>
+            <a href="#" class="footer__link-2">User Analytic</a>
+            <a href="#" class="footer__link-3">Live Chat</a>
+          </div>
+        </div>
+      </div>
+      <div class="box2"></div>
+        <div class="footer__item-1">
+          <h5 class="footer__link-heading">
+            Get In Touch
+          </h5>
+          <form action="#" class="subscribe">
+            <!-- <input type="email" id="email"  placeholder="Your Email" name="email"> -->
+            <input type="email" id="email1" placeholder="Your Email" />
+            <button type="submit" class="subscribe__button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      </div>
+      <div class="footer__lower">
+        <h6 class="footer__title">All Right Reserved </h6>
+      </div>
+    <footer>
+      <script src="index.js"></script>
+  </body>
+</html>
